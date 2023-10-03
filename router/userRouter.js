@@ -1,6 +1,6 @@
 const express= require('express');
 const router= express.Router();
-const getUserData=require("../controller/useConroller")
-router.get("/home",getUserData) 
+const getUser=require("../controller/useConroller")
+router.get("/home",getUser) 
 
 module.exports=router

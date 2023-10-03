@@ -1,5 +1,5 @@
- const  getUserData=(req,res)=>{
-    res.send("this  is home page")
+ const  getUser=(req,res)=>{
+    res.send("this  is heesfome page")
  }
 
- module.exports=getUserData
+ module.exports=getUser
