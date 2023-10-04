@@ -6,3 +6,4 @@ const TodoSchema =mongoose.Schema({
  }
 }) 
      
+module.exports= mongoose.model("Todo", todoSchema);
