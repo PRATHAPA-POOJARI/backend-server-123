@@ -1,7 +1,7 @@
 const mongoose = require('mongoose'); // Added quotes around 'mongoose'
 const database = async () => {
     try {
-        await mongoose.connect(process.env.DATABASE_URL, {
+      await mongoose.connect(process.env.DATABASE_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
@@ -10,5 +10,4 @@ const database = async () => {
         console.error(error);
     }
 }
-
 module.exports = database;
