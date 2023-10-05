@@ -7,4 +7,4 @@ const postTodo=async(req,res)=>{
         console.log(err);
     }
 }
-module.exports={postTodo}
+modul.exports={postTodo}
