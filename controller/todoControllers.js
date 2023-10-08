@@ -2,11 +2,16 @@ const Todo = require("../models/TodoSchema")
 
 const postTodo=async(req,res)=>{
     try {
-         const  success= await Todo.create({todo:"this is the todo"})
+         console.log(req.params.todo)
+         const  success= await Todo.create({todo:req.params.todo})
+         if(success){
+             res.status(200).send({"message":"Todo created..."})
+         }
+         res.status(400).send({"message":"Not  created..."})
     } catch (err ) {
         console.log(err);
     }
 }
-modul.exports={postTodo}
+module.exports={postTodo}
 
  
